@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Get port from environment variable or choose 9099 as local default
 port = int(os.getenv("PORT", 9099))
-home = str(os.getenv('HOME'))
+home = str(os.getenv('ORACLE_HOME'))
 env = str(os.getenv('APP_ENV', 'unknown'))
 
 @app.route('/')
